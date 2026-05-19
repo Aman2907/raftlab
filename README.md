@@ -52,4 +52,28 @@ backend/
 
 # Installation
 Clone Repository
-git clone YOUR_GITHUB_REPOSITORY_LINK
+git clone https://github.com/Aman2907/raftlab.git
+
+
+#Backend Setup
+cd backend
+npm install
+npm run dev
+
+---
+
+
+#Frontend Setup
+cd client
+npm install
+npm run dev
+
+---
+
+#Testing
+Backend Tests
+cd backend
+npm test
+Frontend Tests
+cd client
+npm run test
