@@ -47,3 +47,9 @@ A full-stack food ordering and order tracking application built using React, Nod
 ```bash
 client/
 backend/
+
+---
+
+# Installation
+Clone Repository
+git clone YOUR_GITHUB_REPOSITORY_LINK
