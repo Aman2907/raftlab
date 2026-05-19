@@ -71,9 +71,25 @@ npm run dev
 ---
 
 #Testing
-Backend Tests
-cd backend
-npm test
+- Backend Tests
+- cd backend
+- npm test
+
+
 Frontend Tests
-cd client
-npm run test
+- cd client
+- npm run test
+
+
+
+#TDD Implementation
+
+The project follows Test-Driven Development (TDD).
+
+Covered test cases:
+
+- API endpoint testing
+- CRUD operation testing
+- Input validation testing
+- Order status update testing
+- React component rendering tests
