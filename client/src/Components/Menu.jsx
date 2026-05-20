@@ -80,10 +80,11 @@ const Menu = () => {
 
     setCart(updatedCart);
   };
-
   useEffect(() => {
     const fetchFoods = async () => {
-      const response = await axios.get("https://raftlab-i23i.onrender.com/api/orders")
+      const response = await axios.get(
+        "https://raftlab-i23i.onrender.com/menu",
+      );
 
       setFoods(response.data);
     };
@@ -216,7 +217,7 @@ const Menu = () => {
         {/* HEADER */}
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-xl font-bold text-black">
-           Your Cart ({totalItems} Items)
+            Your Cart ({totalItems} Items)
           </h2>
 
           <button
@@ -250,8 +251,7 @@ const Menu = () => {
                   onClick={() => increaseQuantity(item.id)}
                   className="w-8 h-8 rounded-full bg-orange-500 text-white hover:bg-orange-600 transition cursor-pointer"
                 >
-                  
-                  + 
+                  +
                 </button>
               </div>
 
