@@ -3,6 +3,7 @@ const cors = require("cors");
 
 const menuRoutes = require("./routes/menuRoutes");
 const orderRoutes = require("./routes/orderRoutes");
+const PORT = process.env.PORT || 5000;
 
 const app = express();
 
@@ -14,6 +15,6 @@ app.use("/menu", menuRoutes);
 
 app.use("/orders", orderRoutes);
 
-app.listen(5000, () => {
+app.listen(PORT, () => {
 console.log("Server Running On Port 5000");
 });
