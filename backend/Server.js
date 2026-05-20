@@ -16,5 +16,5 @@ app.use("/menu", menuRoutes);
 app.use("/orders", orderRoutes);
 
 app.listen(PORT, () => {
-console.log("Server Running On Port 5000");
+console.log(`Server Running On Port ${PORT}`);
 });
