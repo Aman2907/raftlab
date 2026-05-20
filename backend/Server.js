@@ -15,6 +15,10 @@ app.use("/menu", menuRoutes);
 
 app.use("/orders", orderRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Backend Running Successfully 🚀");
+});
+
 app.listen(PORT, () => {
 console.log(`Server Running On Port ${PORT}`);
 });
