@@ -1,32 +1,22 @@
 import { render, screen } from "@testing-library/react";
-
 import Orders from "../Components/Orders";
-
-import { BrowserRouter } from "react-router-dom";
-
+import axios from "axios";
 import { vi } from "vitest";
 
-// MOCK useParams
-vi.mock("react-router-dom", async () => {
-  const actual = await vi.importActual("react-router-dom");
-
-  return {
-    ...actual,
-    useParams: () => ({
-      id: "123",
-    }),
-  };
-});
+vi.mock("axios");
 
 describe("Orders Component", () => {
 
-  test("renders loading text", () => {
+  test("renders loading text", async () => {
 
-    render(
-      <BrowserRouter>
-        <Orders />
-      </BrowserRouter>
-    );
+    axios.get.mockResolvedValue({
+      data: {
+        customerName: "Aman",
+        status: "Preparing",
+      },
+    });
+
+    render(<Orders />);
 
     expect(screen.getByText(/loading/i)).toBeInTheDocument();
 
