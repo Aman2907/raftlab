@@ -83,7 +83,7 @@ const Menu = () => {
 
   useEffect(() => {
     const fetchFoods = async () => {
-      const response = await axios.get("http://localhost:5000/menu");
+      const response = await axios.get("https://raftlab-i23i.onrender.com/api/orders")
 
       setFoods(response.data);
     };
