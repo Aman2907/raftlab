@@ -165,3 +165,43 @@ Implemented automated testing for:
 - Input validation testing
 - Order status update testing
 - React component rendering tests
+
+---
+
+# Test Results
+
+## Backend Test Results
+
+![Backend Tests](./ext/backend-tests.png)
+
+---
+
+## Frontend Test Results
+
+![Frontend Tests](./ext/frontend-tests.png)
+
+---
+
+# Screenshots Folder Structure
+
+```bash
+screenshots/
+├── backend-tests.png
+└── frontend-tests.png
+```
+
+---
+
+# Future Improvements
+
+- Payment gateway integration
+- Authentication & authorization
+- Admin dashboard
+- Real-time socket updates
+- Deployment using Docker & CI/CD
+
+---
+
+# Author
+
+Aman Sharma
