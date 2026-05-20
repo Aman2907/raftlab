@@ -35,9 +35,9 @@ const NavBar = () => {
 
         <h1
           onClick={() => navigate("/")}
-          className="m-0 cursor-pointer text-2xl text-orange-600 font-bold"
+          className="m-0 cursor-pointer text-2xl text-orange-600 font-bold hover:text-orange-700 transition"
         >
-          FooDie
+          QuickBite
         </h1>
       </div>
 
@@ -47,7 +47,7 @@ const NavBar = () => {
           to="/"
           className={({ isActive }) =>
             `relative after:content-[''] after after after:-bottom-1 after:h-[2px] after after after 
-          ${isActive ? "text-orange-500 after:w-full" : "text-black after:w-0 hover:text-orange-500 hover:after:w-full"}`
+          ${isActive ? "text-orange-600 after:w-full" : "text-black after:w-0 hover:text-orange-700 hover:after:w-full"}`
           }
         >
           Home
@@ -57,7 +57,7 @@ const NavBar = () => {
           to="/menu"
           className={({ isActive }) =>
             `relative after:content-[''] after after after:-bottom-1 after:h-[2px] after after after 
-          ${isActive ? "text-orange-500 after:w-full" : "text-black after:w-0 hover:text-orange-500 hover:after:w-full"}`
+          ${isActive ? "text-orange-600 after:w-full" : "text-black after:w-0 hover:text-orange-700 hover:after:w-full"}`
           }
         >
           Menu
@@ -67,7 +67,7 @@ const NavBar = () => {
           to="/orders"
           className={({ isActive }) =>
             `relative after:content-[''] after after after:-bottom-1 after:h-[2px] after after after 
-          ${isActive ? "text-orange-500 after:w-full" : "text-black after:w-0 hover:text-orange-500 hover:after:w-full"}`
+          ${isActive ? "text-orange-600 after:w-full" : "text-black after:w-0 hover:text-orange-700 hover:after:w-full"}`
           }
         >
           Orders
@@ -77,7 +77,7 @@ const NavBar = () => {
           to="/about"
           className={({ isActive }) =>
             `relative after:content-[''] after after after:-bottom-1 after:h-[2px] after after after 
-          ${isActive ? "text-orange-500 after:w-full" : "text-black after:w-0 hover:text-orange-500 hover:after:w-full"}`
+          ${isActive ? "text-orange-600 after:w-full" : "text-black after:w-0 hover:text-orange-700 hover:after:w-full"}`
           }
         >
           About
@@ -87,7 +87,7 @@ const NavBar = () => {
           to="/contact"
           className={({ isActive }) =>
             `relative after:content-[''] after after after:-bottom-1 after:h-[2px] after after after 
-          ${isActive ? "text-orange-500 after:w-full" : "text-black after:w-0 hover:text-orange-500 hover:after:w-full"}`
+          ${isActive ? "text-orange-600 after:w-full" : "text-black after:w-0 hover:text-orange-700 hover:after:w-full"}`
           }
         >
           Contact
@@ -97,7 +97,7 @@ const NavBar = () => {
       {/* Right Side */}
       <div className="flex items-center gap-4">
         {/* Search */}
-        <div className="relative flex items-center border border-gray-300 rounded-lg px-3">
+        <div className="relative flex items-center border border-black-300 hover:bg-orange-100 rounded-lg px-3">
           <IoIosSearch className="text-xl text-gray-500" />
           <input
             type="text"
@@ -128,20 +128,24 @@ const NavBar = () => {
             </div>
           )}
         </div>
+
+
         {/* CART BUTTON */}{" "}
         <button
           onClick={() => navigate("/checkout")}
           className="relative
-          border border-gray-300 p-3 rounded-lg hover:border-orange-500 transition"
+          border border-gray-300 p-3 rounded-lg hover:border-orange-200 transition"
         >
           <BsCartCheck className="text-xl" />{" "}
           {cart.length > 0 && (
-            <span className="absolute -top-2 -right-2 bg-orange-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
+            <span className="absolute -top-2 -right-2 bg-orange-600 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
               {" "}
               {cart.length}
             </span>
           )}{" "}
         </button>
+
+
         {/* Profile */}
         <div className="relative">
           <div

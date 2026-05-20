@@ -13,7 +13,7 @@ const Home = () => {
           <h1 className="text-2xl md:text-2xl lg:text-6xl font-bold leading-tight text-[#111827]">
             Delicious food,
             <br />
-            <span className="text-orange-500">delivered fast</span>
+            <span className="text-orange-600">delivered fast</span>
             <br />
             to your doorstep
           </h1>
@@ -27,14 +27,14 @@ const Home = () => {
           <div className="flex gap-4 mt-8">
             <button
               onClick={() => navigate("/menu")}
-              className="bg-orange-500 hover:bg-orange-600 transition text-white px-7 py-3 rounded-xl font-semibold shadow-md"
+              className="bg-orange-600 hover:bg-orange-700 transition text-white px-7 py-3 rounded-xl font-semibold shadow-md"
             >
               Order Now
             </button>
 
             <button
               onClick={() => navigate("/menu")}
-              className="bg-white border border-gray-300 hover:border-orange-500 hover:text-orange-500 transition px-7 py-3 rounded-xl font-semibold"
+              className="bg-white border border-gray-300 hover:border-orange-600 hover:text-orange-600 transition px-7 py-3 rounded-xl font-semibold"
             >
               View Menu
             </button>

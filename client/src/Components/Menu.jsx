@@ -166,7 +166,7 @@ const Menu = () => {
         <section className="flex gap-4 mt-8 mb-10">
           <button
             onClick={() => setSortType("popular")}
-            className={`px-5 py-2 rounded-lg ${
+            className={` cursor-pointer , px-5 py-2 rounded-lg ${
               sortType === "popular"
                 ? "bg-orange-500 text-white"
                 : "bg-white text-black"
@@ -177,7 +177,7 @@ const Menu = () => {
 
           <button
             onClick={() => setSortType("price")}
-            className={`px-5 py-2 rounded-lg ${
+            className={` cursor-pointer , px-5 py-2 rounded-lg ${
               sortType === "price"
                 ? "bg-orange-500 text-white"
                 : "bg-white text-black"
@@ -188,7 +188,7 @@ const Menu = () => {
 
           <button
             onClick={() => setSortType("rating")}
-            className={`px-5 py-2 rounded-lg ${
+            className={` cursor-pointer , px-5 py-2 rounded-lg ${
               sortType === "rating"
                 ? "bg-orange-500 text-white"
                 : "bg-white text-black"
