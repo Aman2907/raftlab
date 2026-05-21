@@ -2,6 +2,7 @@ import React from "react";
 import { MdFoodBank } from "react-icons/md";
 
 const About = () => {
+console.log(import.meta.env.VITE_API_URL);
 return ( <section className="bg-gray-100 min-h-screen px-5 lg:px-10 py-12">
 
   {/* TOP */}
