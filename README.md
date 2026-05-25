@@ -2,7 +2,7 @@
 
 A full-stack food ordering and order tracking application built using React.js, Node.js, Express.js and MongoDB.
 
-The application allows users to browse food items, manage cart operations, place orders and track order status dynamically in real-time.
+The application allows users to browse food items, manage cart operations, place orders and track order status dynamically in real time.
 
 ---
 
@@ -43,7 +43,7 @@ The application allows users to browse food items, manage cart operations, place
 - Form validation
 - Backend API testing
 - Frontend component testing
-
+ 
 ---
 
 # Order Tracking System
