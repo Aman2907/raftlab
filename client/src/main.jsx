@@ -10,13 +10,9 @@ import OrderProvider from "./Context/OrderContext";
 ReactDOM.createRoot(document.getElementById("root")).render(
 
   <BrowserRouter>
-
     <OrderProvider>
-
       <App />
-
     </OrderProvider>
-
   </BrowserRouter>
 
 );
