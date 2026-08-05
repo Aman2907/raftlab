@@ -4,8 +4,6 @@ A full-stack food ordering and order tracking application built using React.js, 
 
 The application allows users to browse food items, manage cart operations, place orders and track order status dynamically in real time.
 
----
-
 # Tech Stack
 
 ## Frontend
